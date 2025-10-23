@@ -5,7 +5,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 const app = express();
 const PORT = 3000;
 
-const GEMINI_API_KEY = "AIzaSyCubGmnX_kJ-yBOSF_Z1MW0H0YBKZ5m7gU";
+const GEMINI_API_KEY = "";
 
 const apiCache = new Map();
 
@@ -67,4 +67,5 @@ app.post('/analyze', async (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Verdify server is running on http://localhost:${PORT}`);
+
 });
