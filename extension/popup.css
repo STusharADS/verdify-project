@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  width: 300px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container { padding: 20px; }
+
+.header { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 10px; }
+
+.logo-icon { width: 24px; height: 24px; color: #007185; }
+
+.title { font-size: 20px; font-weight: 600; color: #007185; }
+
+.card { background-color: white; border-radius: 8px; padding: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+.card p { margin: 0 0 15px 0; font-size: 14px; color: #555; text-align: center; }
+
+#impact-list { list-style-type: none; padding: 0; margin: 0; text-align: left; }
+#impact-list li { font-size: 15px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.impact-value { font-size: 18px; font-weight: 700; color: #008700; min-width: 20px; text-align: right; }
+.impact-explanation { font-size: 12px; font-style: italic; margin-top: 15px !important; }
+.impact-icon svg {
+  width: 20px;
+  height: 20px;
+  color: #007185;
+}

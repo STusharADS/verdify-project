@@ -1,0 +1,64 @@
+/* --- Aura Effect --- */
+.verdify-aura-green { box-shadow: 0 0 25px 12px rgba(46, 204, 113, 0.7) !important; transition: box-shadow 0.5s ease-in-out; }
+.verdify-aura-red { box-shadow: 0 0 25px 12px rgba(231, 76, 60, 0.7) !important; transition: box-shadow 0.5s ease-in-out; }
+
+/* --- Video Loader Styles --- */
+.verdify-loader { display: flex; align-items: center; justify-content: center; padding: 20px 0; }
+.verdify-loader video { width: 80%; max-width: 250px; height: auto; border-radius: 8px; }
+
+/* --- Main Card --- */
+.verdify-card { font-family: system-ui, sans-serif; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin: 15px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.verdify-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.verdify-title { font-size: 20px; font-weight: 700; color: #007185; display: flex; align-items: center; gap: 10px; text-transform: uppercase; }
+.verdify-title .verdify-icon { width: 28px; height: 28px; }
+.verdify-scores-pals-wrapper { display: flex; align-items: center; gap: 15px; }
+.verdify-scores { text-align: right; }
+.verdify-score { font-size: 22px; font-weight: 700; }
+.verdify-confidence { font-size: 13px; color: #555; }
+.verdify-list { list-style-type: none; padding: 0; margin: 0; }
+.verdify-list-item { display: flex; align-items: start; gap: 8px; font-size: 14px; margin-bottom: 8px; line-height: 1.4; }
+.verdify-list-item .verdify-icon { width: 16px; height: 16px; margin-top: 2px; flex-shrink: 0; }
+
+/* --- Sections --- */
+.verdify-section { border-top: 1px solid #ddd; margin-top: 12px; padding-top: 12px; }
+.verdify-section-title { font-size: 16px; font-weight: 600; margin: 0 0 8px 0; }
+.verdify-swap-link, .verdify-track-button { display: inline-block; background-color: #007185; color: white !important; text-decoration: none; padding: 8px 12px; border-radius: 5px; border: none; font-size: 14px; cursor: pointer; transition: background-color 0.2s; }
+.verdify-swap-link:hover, .verdify-track-button:hover { background-color: #005a6a; }
+.verdify-track-button.tracked { background-color: #008700; cursor: default; }
+
+/* --- Verdi-Pals Redesign --- */
+.verdify-pals-container { display: flex; align-items: flex-end; height: 60px; }
+.verdify-pal { position: relative; transform-origin: bottom; }
+
+/* -- Leafy Pal -- */
+.verdify-pal.leafy .pot { width: 35px; height: 30px; background-color: #8D6E63; border-radius: 0 0 10px 10px; position: relative; border: 1px solid #795548; }
+.verdify-pal.leafy .pot::before { content: ''; position: absolute; top: 0; left: -2px; width: 39px; height: 6px; background-color: #A1887F; border-radius: 3px; border-bottom: 1px solid #795548; }
+.verdify-pal.leafy .stem { position: absolute; width: 5px; height: 15px; background: #689F38; bottom: 28px; left: 15px; }
+.verdify-pal.leafy .leaf { position: absolute; background-color: #4CAF50; width: 25px; height: 25px; border-radius: 2px 50%; bottom: 35px; }
+.verdify-pal.leafy .leaf.left { left: -5px; transform: rotate(-45deg); }
+.verdify-pal.leafy .leaf.right { left: 15px; transform: rotate(135deg); }
+.verdify-pal.leafy .eye { position: absolute; z-index: 1; width: 7px; height: 7px; background-color: white; border-radius: 50%; border: 1px solid #333; top: 8px; left: 5px; }
+.verdify-pal.leafy .eye.right { left: 18px; }
+
+/* -- Cactus Pal -- */
+.verdify-pal.cactus { margin-left: -5px; }
+.verdify-pal.cactus .pot { width: 30px; height: 25px; background-color: #A1887F; border-radius: 0 0 8px 8px; position: relative; border: 1px solid #795548;}
+.verdify-pal.cactus .pot::before { content: ''; position: absolute; top: 0; left: -2px; width: 34px; height: 5px; background-color: #BF360C; border-radius: 2px; }
+.verdify-pal.cactus .body { position: absolute; bottom: 23px; left: 5px; width: 20px; height: 35px; background-color: #689F38; border-radius: 10px 10px 0 0; }
+.verdify-pal.cactus .arm { position: absolute; background-color: #689F38; width: 15px; height: 5px; border-radius: 3px; top: 10px; }
+.verdify-pal.cactus .arm.left { left: -10px; transform: rotate(45deg); }
+.verdify-pal.cactus .arm.right { left: 15px; transform: rotate(-45deg); }
+.verdify-pal.cactus .eye { position: absolute; z-index: 1; width: 7px; height: 7px; background-color: white; border-radius: 50%; border: 1px solid #333; top: 8px; left: calc(50% - 3.5px); }
+
+/* --- Shared Pal Elements --- */
+.verdify-pal .pupil { position: absolute; width: 3px; height: 3px; background-color: #333; border-radius: 50%; transition: transform 0.05s ease-out; top: 2px; left: 2px; }
+.verdify-pal .mouth { position: absolute; transition: all 0.2s ease-in-out; z-index: 1; }
+.verdify-pal .mouth.neutral { width: 10px; height: 1.5px; background: #333; bottom: 7px; left: calc(50% - 5px); border-radius: 1px; }
+.verdify-pal .mouth.happy { width: 12px; height: 6px; border: 1.5px solid #333; border-top: none; border-radius: 0 0 6px 6px; bottom: 5px; left: calc(50% - 6px); }
+.verdify-pal .mouth.sad { width: 12px; height: 6px; border: 1.5px solid #333; border-bottom: none; border-radius: 6px 6px 0 0; bottom: 3px; left: calc(50% - 6px); }
+.verdify-pal .tear { position: absolute; background-color: #92b8d0; border-radius: 50%; opacity: 0; transform: scale(0); animation: none; z-index: 4; }
+.verdify-pal.sad-crying .tear { width: 4px; height: 7px; top: 16px; left: 6px; animation: drip 1.5s ease-in-out infinite 0.1s; }
+.verdify-pal.cactus.sad-crying .tear { left: calc(50% - 2px); }
+.verdify-pal.happy-bouncing { animation: bounce 0.5s ease-in-out; }
+@keyframes drip { 0% {transform: translateY(-5px) scale(0); opacity: 0;} 20% {transform: translateY(0px) scale(1); opacity: 1;} 80% {transform: translateY(15px) scale(1); opacity: 0.8;} 100% {transform: translateY(25px) scale(0); opacity: 0;} }
+@keyframes bounce { 0%, 100% {transform: translateY(0);} 50% {transform: translateY(-5px);} }

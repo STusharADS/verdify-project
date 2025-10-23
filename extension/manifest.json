@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Verdify",
+  "version": "1.0",
+  "description": "Brings clarity to the green fog by analyzing product sustainability.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "loader.mp4","leaflogo.jpg" ],
+      "matches": [ "https://www.amazon.in/*", "https://www.amazon.com/*" ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.amazon.in/*",
+        "https://www.amazon.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
